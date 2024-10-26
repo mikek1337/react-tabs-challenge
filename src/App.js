@@ -1,12 +1,12 @@
-import './App.css';
-import Tabs from './components/Tabs';
-import CacheProvider from './components/context/CacheContext';
+import "./App.css";
+import Tabs from "./components/Tabs";
+import CacheProvider from "./components/context/CacheContext";
 function App() {
   return (
     <CacheProvider>
-    <div>
-      <Tabs/>
-    </div>
+      <div>
+        <Tabs />
+      </div>
     </CacheProvider>
   );
 }

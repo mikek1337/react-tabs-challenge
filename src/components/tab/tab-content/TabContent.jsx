@@ -1,14 +1,11 @@
 import useQuery from "../../hooks/useFetch";
 import './TabContent.css';
 export default function TabContent({tabs, activeTabIndex}){
+    //in normal 
     const {data, loading, error} = useQuery({
         url: '/api/1',
         requestInfo:{
             method: 'GET',
-            headers: {
-                'Content-Type': 'text/plain',
-                'Accept-Encoding': 'gzip'
-            }
         },
         initialEnable: true,
         cache:{
@@ -28,8 +25,7 @@ export default function TabContent({tabs, activeTabIndex}){
                         <h2>{tab.title}</h2>
                         {loading && <p>Loading...</p>}
                         {!loading && data && <p>{extractedText}</p>}
-
-
+                        {error && <p>{error}, please reload the page!</p>}
                     </div>
 
             
