@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabButton should render 1`] = `
+<div>
+  <div
+    class="tab-button"
+  >
+    <div
+      class="tab-title-container active"
+    >
+      <span>
+        Tab 1
+      </span>
+    </div>
+    <div
+      class="tab-title-container "
+    >
+      <span>
+        Tab 2
+      </span>
+    </div>
+    <div
+      class="tab-title-container "
+    >
+      <span>
+        Tab 3
+      </span>
+    </div>
+    <div
+      class="tab-title-container "
+    >
+      <span>
+        Tab 4
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,4 +1,4 @@
-import { render, renderHook } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import CacheProvider, {useCache} from '../../components/context/CacheContext';
 
 

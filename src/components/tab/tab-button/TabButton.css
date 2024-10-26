@@ -3,6 +3,7 @@
     flex-direction: row;
     background-color: #262626;
     height: 60px;
+    overflow-x: auto;
    
 }
 .tab-title-container{
