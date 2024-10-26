@@ -1,0 +1,32 @@
+.tab-button{
+    display: flex;
+    flex-direction: row;
+    background-color: #262626;
+    height: 60px;
+   
+}
+.tab-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.tab-title-container span{
+    color: #9CA3AF;
+}
+
+.tab-title-container:hover{
+    background-color: #3B3B3B;
+    cursor: pointer;
+}
+
+.tab-title-container.active{
+    background-color: #0284C7;
+  
+}
+.tab-title-container.active span{
+    color: #FFFFFF;
+}

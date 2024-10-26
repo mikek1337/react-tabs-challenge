@@ -1,0 +1,24 @@
+.tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   background-color: #FFFFFF;
+    height: fit-content;
+    min-height: fit-content;
+    height: 300px;
+    
+}
+.tab-content{
+    width: 90%;
+    padding: 20px;
+}
+.tab-content h2{
+    margin-bottom: 10px;
+}
+.tab-content p{
+    color: #737373;
+    font-size: 15px;
+    line-height: 1.5;
+    
+}
