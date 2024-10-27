@@ -30,6 +30,9 @@ export default function useQuery({
         if (res.ok) {
           return res.text();
         }
+        setError("something went wrong")
+      }).catch((error)=>{
+        setError(error)
       })
       .then((data) => {
         
@@ -37,11 +40,12 @@ export default function useQuery({
         if (cache.enabled) {
           setCache(cacheKey, data, cache.ttl);
         }
-        setLoading(false);
       })
       .catch((err) => {
         setError(err);
-        setLoading(false);
+      }).finally(()=>{
+        setLoading(false)
+        console.log(error)
       });
   };
 

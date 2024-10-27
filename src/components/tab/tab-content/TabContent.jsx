@@ -25,7 +25,7 @@ export default function TabContent({tabs, activeTabIndex}){
                         <h2>{tab.title}</h2>
                         {loading && <p>Loading...</p>}
                         {!loading && data && <p>{extractedText}</p>}
-                        {error && <p>{error}, please reload the page!</p>}
+                        {!loading && error && <p>{error}, please reload the page!</p>}
                     </div>
 
             
